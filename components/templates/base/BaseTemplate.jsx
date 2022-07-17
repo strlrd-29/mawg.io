@@ -1,8 +1,10 @@
-const BaseTemplate = () => {
+import {Box, Heading} from '@chakra-ui/react'
+
+const BaseTemplate = ({sampleTextProp}) => {
 	return (
-		<div>
-			<h1>Base Template</h1>
-		</div>
+		<Box>
+			<Heading>{sampleTextProp}</Heading>
+		</Box>
 	)
 }
 

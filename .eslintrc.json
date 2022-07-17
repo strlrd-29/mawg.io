@@ -1,5 +1,8 @@
 {
-	"extends": "next/core-web-vitals",
+	"extends": [
+		"next/core-web-vitals",
+		"plugin:storybook/recommended"
+	],
 	"globals": {
 		"React": "readonly"
 	},
@@ -9,7 +12,8 @@
 				"*.stories.@(ts|tsx|js|jsx|mjs|cjs)"
 			],
 			"rules": {
-				"storybook/hierarchy-separator": "error"
+				"storybook/hierarchy-separator": "error",
+				"storybook/default-exports": "off"
 			}
 		}
 	],
