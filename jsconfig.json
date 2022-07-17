@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"types": [
+			"node"
+		],
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": [
+				"components/*"
+			],
+			"@/styles/*": [
+				"styles/*"
+			],
+			"@/lib/*": [
+				"lib/*"
+			]
+		}
+	}
+}
