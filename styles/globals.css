@@ -1,16 +1,50 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html {
+	min-width: 360px;
+	scroll-behavior: smooth;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: optional;
+	src: url(../public/fonts/Quicksand-Variable.ttf) format('ttf');
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+	font-family: '"Spline sans"';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: optional;
+	src: url(../public/fonts/SplineSans-Variable.ttf) format('ttf');
+}
+
+#__next {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+*:focus {
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+
+*:active {
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: #f9fafb;
+	background: #14b8a6;
+}
+
+::selection {
+	color: #f9fafb;
+	background: #14b8a6;
 }
