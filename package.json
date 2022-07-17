@@ -1,26 +1,30 @@
 {
-  "name": "mawg.io",
-  "author": "Ouassim AKA strlrd-29",
-  "description": "A simple, web app to manage my movies",
-  "version": "0.1.0",
-  "private": true,
-  "license": "MIT",
-  "homepage": "https://github.com/strlrd-29/mawg.io",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prettier": "prettier --write ."
-  },
-  "dependencies": {
-    "next": "12.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.2",
-    "prettier": "^2.7.1"
-  }
+	"name": "mawg.io",
+	"author": "Ouassim AKA strlrd-29",
+	"description": "A simple, web app to manage my movies",
+	"version": "0.1.0",
+	"private": true,
+	"license": "MIT",
+	"homepage": "https://github.com/strlrd-29/mawg.io",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prettier": "prettier --write .",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"next": "12.2.2",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"eslint": "8.20.0",
+		"eslint-config-next": "12.2.2",
+		"husky": "^8.0.1",
+		"prettier": "^2.7.1"
+	}
 }
