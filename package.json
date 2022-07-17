@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"homepage": "https://github.com/strlrd-29/mawg.io",
 	"scripts": {
-		"dev": "next dev",
+		"dev": "cross-env MODE_OPTIONS='--inspect' next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
@@ -22,6 +22,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^17.0.3",
 		"@commitlint/config-conventional": "^17.0.3",
+		"cross-env": "^7.0.3",
 		"eslint": "8.20.0",
 		"eslint-config-next": "12.2.2",
 		"husky": "^8.0.1",
